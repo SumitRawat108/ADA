@@ -19,7 +19,7 @@ void findFirstDuplicate(int arr[], int n, int i, int j){
 }
 
 int main(){
-    int arr[] = {4,2,3,4,4,5,3,5,2,1};
+    int arr[] = {5,2,3,4,4,5,3,5,2,1};
     int n = 10;
 
     findFirstDuplicate(arr, n, 0, 1);

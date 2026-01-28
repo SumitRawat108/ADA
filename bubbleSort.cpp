@@ -15,30 +15,37 @@ int bubbleSort(int arr[], int n) {
     }
 }
 
-
 int main() {
     int n;
     cout << "Enter number of elements: ";
     cin >> n;
 
-    int arr[n];
+    int* arr = new int[n];
 
     srand(time(0));
-
-    cout << "Array Generated : ";
-    for (int i = 0; i < n; i++)
-    {
-        arr[i] = rand() % 1000000; 
-        //cout << arr[i] << " ";
+    for (int i = 0; i < n; i++) {
+        arr[i] = rand() % 1000000;
     }
 
+    const int RUNS = 1000;
+    int index = -1;
+
     auto start = high_resolution_clock::now();
-    int result = bubbleSort(arr, n);
+
+    for (int i = 0; i < RUNS; i++) {
+        index = bubbleSort(arr, n);
+    }
+
     auto stop = high_resolution_clock::now();
-    auto duration = duration_cast<milliseconds>(stop - start);
 
-    cout << "\nTime taken to sort "<<n<<" elements using Bubble Sort: " 
-         << duration.count() << " milliseconds" << endl;
+    auto totalTime = duration_cast<microseconds>(stop - start).count();
+    double averageTime = (double)totalTime / RUNS;
 
+    cout << "Total time for " << RUNS << " runs: "
+         << totalTime << " microseconds" << endl;
+    cout << "Average time per search: "
+         << averageTime << " microseconds" << endl;
+
+    delete[] arr;
     return 0;
 }
