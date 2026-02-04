@@ -260,6 +260,7 @@ Space Complexity:
 O(n)
 Dynamic memory is used to store the array.
 
+<img width="588" height="455" alt="linearSearch" src="https://github.com/user-attachments/assets/29b92036-2457-42ed-9d4b-4a57244028cb" />
 
 <h3><b>6. Bubble Sort with Time Analysis</b></h3>
 
@@ -316,6 +317,8 @@ Space Complexity:
 
 O(1)
 Bubble Sort is an in-place sorting algorithm and requires constant extra space.
+
+<img width="567" height="455" alt="bubbleSort" src="https://github.com/user-attachments/assets/89193908-d453-422f-8764-667879fad558" />
 
 
 <h3><b>7. Insertion Sort with Best & Worst Case Analysis</b></h3>
@@ -382,6 +385,8 @@ Space Complexity:
 
 O(1)
 Insertion Sort is an in-place sorting algorithm.
+
+<img width="567" height="455" alt="insertionSort" src="https://github.com/user-attachments/assets/a93482a2-4f69-4ef8-a0f6-a7367de0b370" />
 
 
 <h3><b>8. First Duplicate Element in an Array</b></h3>
@@ -604,6 +609,8 @@ Space Complexity:
 O(1)
 Selection Sort is an in-place sorting algorithm.
 
+<img width="576" height="455" alt="selectionSort" src="https://github.com/user-attachments/assets/0a80a8fd-5306-4950-a7be-ebdd2447323a" />
+
 
 <h3><b>12. Binary Search with Best & Worst Case Time Analysis</b></h3>
 
@@ -675,3 +682,5 @@ Space Complexity:
 
 O(log n)
 Due to recursive function calls.
+
+<img width="567" height="455" alt="binarySearch" src="https://github.com/user-attachments/assets/b90d0c60-f2ca-4875-aaf1-21aeb6026f7b" />
