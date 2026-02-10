@@ -728,7 +728,6 @@ START
 
 END
 
-
 Variables Used:
 
 Variable	Data Type	Description
