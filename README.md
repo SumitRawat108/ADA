@@ -684,3 +684,177 @@ O(log n)
 Due to recursive function calls.
 
 <img width="567" height="455" alt="binarySearch" src="https://github.com/user-attachments/assets/b90d0c60-f2ca-4875-aaf1-21aeb6026f7b" />
+
+
+<h3><b>13. Quick Sort with Average and Worst Case Time Analysis</b></h3>
+
+Aim:
+The aim of this program is to implement the Quick Sort algorithm using recursion and analyze its average and worst-case execution time by running the sort multiple times on different input cases.
+
+Pseudocode:
+
+START
+
+1. Define Partition(a, m, p)
+      v = a[m]
+      i = m
+      j = p
+      Repeat:
+          Increase i until a[i] > v
+          Decrease j until a[j] <= v
+          If i < j:
+              Swap a[i], a[j]
+      Until i > j
+      Place pivot in correct position
+      Return j
+
+2. Define Quick(a, low, high)
+      If low < high:
+          j = Partition(a, low, high + 1)
+          Quick(a, low, j - 1)
+          Quick(a, j + 1, high)
+
+3. In main:
+      Read number of elements n
+      For RUNS times:
+           Generate random array
+           Measure Quick sort time (average case)
+
+      For RUNS times:
+           Generate sorted array
+           Measure Quick sort time (worst case)
+
+4. Print average and worst-case time
+
+END
+
+
+Variables Used:
+
+Variable	Data Type	Description
+a[]	Integer Array	Stores array elements
+n	Integer	Number of elements
+m	Integer	Pivot starting index
+p	Integer	Ending index for partition
+i, j	Integer	Partition pointers
+low	Integer	Starting index of subarray
+high	Integer	Ending index of subarray
+RUNS	Constant Integer	Number of executions
+totalBest	Long Long	Total average-case time
+totalWorst	Long Long	Total worst-case time
+start	Time Point	Start time
+stop	Time Point	End time
+
+Logical Reasoning:
+
+Quick Sort works by selecting a pivot element and partitioning the array.
+
+Elements smaller than the pivot move to the left.
+
+Elements larger than the pivot move to the right.
+
+The process is applied recursively to the left and right subarrays.
+
+Random arrays simulate the average case.
+
+Sorted arrays simulate the worst case for this pivot selection method.
+
+Multiple runs provide more accurate timing results.
+
+Time Complexity:
+
+Best Case: O(n log n)
+
+Average Case: O(n log n)
+
+Worst Case: O(n²)
+(Occurs when the array is already sorted and pivot selection is poor.)
+
+Space Complexity:
+
+Average Case: O(log n) (recursive call stack)
+
+Worst Case: O(n)
+
+<img width="567" height="455" alt="quickSort" src="https://github.com/user-attachments/assets/858c3a03-209e-4438-9174-4d5b9ab43e19" />
+
+<h3><b>14. Merge Sort with Average Case Time Analysis</b></h3>
+
+Aim:
+The aim of this program is to implement the Merge Sort algorithm using recursion and analyze its average-case execution time by running the sorting process multiple times on randomly generated data.
+
+Pseudocode:
+
+START
+
+1. Define merge(arr, low, mid, high)
+      Create two temporary arrays:
+          L[] for left subarray
+          R[] for right subarray
+      Copy elements into L[] and R[]
+      Compare elements from L[] and R[]
+      Place smaller element back into arr[]
+      Copy any remaining elements
+
+2. Define mergeSort(arr, low, high)
+      If low < high:
+          mid = (low + high) / 2
+          mergeSort(arr, low, mid)
+          mergeSort(arr, mid + 1, high)
+          merge(arr, low, mid, high)
+
+3. In main:
+      Read number of elements n
+      Generate random array
+      Repeat mergeSort for RUNS times
+      Measure total time
+      Calculate and display average time
+
+END
+
+
+Variables Used:
+
+Variable	Data Type	Description
+arr[]	Integer Array	Stores array elements
+n	Integer	Number of elements
+low	Integer	Starting index
+mid	Integer	Middle index
+high	Integer	Ending index
+L[]	Integer Array	Left subarray
+R[]	Integer Array	Right subarray
+i, j, k	Integer	Index counters
+RUNS	Constant Integer	Number of executions
+start	Time Point	Start time
+stop	Time Point	End time
+bestTime	Long Long	Total execution time
+
+Logical Reasoning:
+
+Merge Sort follows the divide and conquer approach.
+
+The array is repeatedly divided into two halves.
+
+Each half is sorted recursively.
+
+The sorted halves are then merged into a single sorted array.
+
+Random input simulates the average case.
+
+Multiple runs ensure more accurate timing results.
+
+Time Complexity:
+
+Best Case: O(n log n)
+
+Average Case: O(n log n)
+
+Worst Case: O(n log n)
+
+Space Complexity:
+
+O(n)
+Extra space is required for temporary subarrays during merging.
+
+<img width="571" height="455" alt="mergeSort" src="https://github.com/user-attachments/assets/a3c7fa0e-0878-4cf1-b43d-7f2dde8a2666" />
+
