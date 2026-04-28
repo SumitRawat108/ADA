@@ -23,14 +23,14 @@ Print pow as the result
 END
 
 <b>Variables Used:</b>
-
-Variable Data Type Description
-x Integer Base number
-n Integer Exponent
-m Integer Copy of exponent used for calculation
-z Integer Stores intermediate squared values
-pow Integer Stores final power result
-
+<pre>
+Variable     Data      Type Description
+x           Integer     Base number
+n           Integer     Exponent
+m           Integer     Copy of exponent used for calculation
+z           Integer     Stores intermediate squared values
+pow         Integer     Stores final power result
+</pre>
 <b>Logical Reasoning:</b>
 
 Instead of multiplying the base x repeatedly n times, the program reduces the number of operations using exponentiation by squaring.
@@ -73,13 +73,14 @@ In main():
 END
 
 <b>Variables Used:</b>
-
-Variable Data Type Description
-a[] Integer Array Stores polynomial coefficients
-n Integer Number of terms
-x Integer Value at which polynomial is evaluated
-i Integer Recursive index
-result Integer Stores final value
+<pre>
+ Variable     Data     Type Description
+a[]         Integer     Array Stores polynomial coefficients
+n           Integer     Number of terms
+x           Integer     Value at which polynomial is evaluated
+i           Integer     Recursive index
+result      Integer     Stores final value
+</pre>
 
 <b>Logical Reasoning:</b>
 
@@ -123,13 +124,13 @@ Else:
 END
 
 <b>Variables Used:</b>
-
-Variable Data Type Description
-a[] Character Array Stores characters
-k Integer Current index
-n Integer Last index
-i Integer Loop counter
-
+<pre>
+Variable     Data         Type Description
+a[]         Character     Array Stores characters
+k           Integer       Current index
+n           Integer       Last index
+i           Integer       Loop counter
+</pre>
 <b>Logical Reasoning:</b>
 
 The algorithm fixes one element at a time and recursively permutes the rest.
@@ -168,13 +169,13 @@ Else:
 END
 
 <b>Variables Used:</b>
-
-Variable Data Type Description
-n Integer Number of disks
-f Integer Source peg
-u Integer Auxiliary peg
-t Integer Destination peg
-
+<pre>
+Variable     Data     Type Description
+n           Integer     Number of disks
+f           Integer     Source peg
+u           Integer     Auxiliary peg
+t           Integer     Destination peg
+</pre>
 <b>Logical Reasoning:</b>
 
 Break problem into smaller steps.
@@ -209,14 +210,14 @@ Calculate average
 END
 
 <b>Variables Used:</b>
-
-Variable Data Type Description
-n Integer Array size
-arr[] Integer Array Stores elements
-key Integer Element to search
-RUNS Integer Number of runs
-averageTime Double Average execution time
-
+<pre>
+Variable     Data        Type Description
+n            Integer     Array size
+arr[]        Integer     Array Stores elements
+key          Integer     Element to search
+RUNS         Integer     Number of runs
+averageTime   Double     Average execution time
+</pre>
 <b>Logical Reasoning:</b>
 
 Checks elements sequentially.
@@ -254,11 +255,11 @@ Measure time
 END
 
 <b>Variables Used:</b>
-
-Variable Data Type Description
-arr[] Integer Array Elements
-i, j Integer Counters
-
+<pre>
+Variable     Data     Type Description
+arr[]      Integer     Array Elements
+i, j       Integer     Counters
+</pre>
 <b>Logical Reasoning:</b>
 
 Largest element moves to end in each pass.
@@ -303,17 +304,18 @@ START
 END
 
 <b>Variables Used:</b>
-
-Variable	Data Type	Description
-n	Integer	Number of elements
-arr[]	Integer Array	Array to be sorted
-i, j	Integer	Loop counters
-key	Integer	Element to be inserted
-RUNS	Constant Integer	Number of executions
-bestTime	Long Long	Total best-case execution time
-worstTime	Long Long	Total worst-case execution time
-start	Time Point	Start time
-stop	Time Point	End time
+<pre>
+Variable        Data Type           Description
+n               Integer             Number of elements
+arr[]           Integer Array       Array to be sorted
+i, j            Integer             Loop counters
+key             Integer             Element to be inserted
+RUNS            Constant Integer    Number of executions
+bestTime        Long Long           Total best-case execution time
+worstTime       Long Long           Total worst-case execution time
+start           Time Point          Start time
+stop            Time Point          End time
+</pre>
 
 <b>Logical Reasoning:</b>
 
@@ -374,11 +376,13 @@ END
 
 <b>Variables Used:</b>
 
-Variable	Data Type	Description
-arr[]	Integer Array	Stores array elements
-n	Integer	Size of the array
-i	Integer	Index of first element being compared
-j	Integer	Index of second element being compared
+<pre>
+Variable        Data Type           Description
+arr[]           Integer Array       Stores array elements
+n               Integer             Size of the array
+i               Integer             Index of first element being compared
+j               Integer             Index of second element being compared
+</pre>
 
 <b>Logical Reasoning:</b>
 
@@ -429,14 +433,15 @@ START
 END
 
 <b>Variables Used:</b>
-
-Variable	Data Type	Description
-arr[]	Integer Array	Stores sorted array elements
-start	Integer	Starting index
-end	Integer	Ending index
-first	Integer	First element of the array
-n	Integer	Size of the array
-missing	Integer	Stores missing number
+<pre>
+Variable        Data Type           Description
+arr[]           Integer Array       Stores sorted array elements
+start           Integer             Starting index
+end             Integer             Ending index
+first           Integer             First element of the array
+n               Integer             Size of the array
+missing         Integer             Stores missing number
+</pre>
 
 <b>Logical Reasoning:</b>
 
@@ -461,7 +466,6 @@ Each element is checked once.
 O(n)
 Due to recursive function calls.
 
-
 <h3><b>10. Ball Bounce Count Using Velocity Reduction</b></h3>
 
 <b>Aim:</b>
@@ -480,13 +484,13 @@ START
 END
 
 <b>Variables Used:</b>
-
+<pre>
 Variable	Data Type	Description
-v	Double	Initial velocity of the ball
-f	Double	Velocity reduction factor after each bounce
-b	Integer	Counts number of bounces
-t	Double	Unused variable (can be removed)
-
+v	        Double	    Initial velocity of the ball
+f	        Double	    Velocity reduction factor after each bounce
+b	        Integer	    Counts number of bounces
+t	        Double	    Unused variable (can be removed)
+</pre>
 <b>Logical Reasoning:</b>
 
 Each bounce reduces the ball’s velocity by a fixed factor (0.575).
@@ -532,14 +536,16 @@ END
 
 <b>Variables Used:</b>
 
-Variable	Data Type	Description
-n	Integer	Number of elements in array
-arr[]	Integer Array	Stores randomly generated values
-i, j	Integer	Loop counters
-minIndex	Integer	Index of minimum element
-start	Time Point	Start time of execution
-stop	Time Point	End time of execution
-duration	Time	Time taken for sorting
+<pre>
+Variable        Data Type           Description
+n               Integer             Number of elements in array
+arr[]           Integer Array       Stores randomly generated values
+i, j            Integer             Loop counters
+minIndex        Integer             Index of minimum element
+start           Time Point          Start time of execution
+stop            Time Point          End time of execution
+duration        Time                Time taken for sorting
+</pre>
 
 <b>Logical Reasoning:</b>
 
@@ -599,18 +605,20 @@ END
 
 <b>Variables Used:</b>
 
-Variable	Data Type	Description
-n	Integer	Number of elements
-arr[]	Integer Array	Stores sorted array elements
-key	Integer	Element to be searched
-low	Integer	Lower index
-high	Integer	Higher index
-mid	Integer	Middle index
-RUNS	Constant Integer	Number of executions
-bestKey	Integer	Key for best-case search
-worstKey	Integer	Key for worst-case search
-bestTime	Long Long	Total best-case time
-avgTime	Long Long	Total worst-case time
+<pre>
+Variable        Data Type           Description
+n               Integer             Number of elements
+arr[]           Integer Array       Stores sorted array elements
+key             Integer             Element to be searched
+low             Integer             Lower index
+high            Integer             Higher index
+mid             Integer             Middle index
+RUNS            Constant Integer    Number of executions
+bestKey         Integer             Key for best-case search
+worstKey        Integer             Key for worst-case search
+bestTime        Long Long           Total best-case time
+avgTime         Long Long           Total worst-case time
+</pre>
 
 <b>Logical Reasoning:</b>
 
@@ -684,19 +692,21 @@ END
 
 <b>Variables Used:</b>
 
-Variable	Data Type	Description
-a[]	Integer Array	Stores array elements
-n	Integer	Number of elements
-m	Integer	Pivot starting index
-p	Integer	Ending index for partition
-i, j	Integer	Partition pointers
-low	Integer	Starting index of subarray
-high	Integer	Ending index of subarray
-RUNS	Constant Integer	Number of executions
-totalBest	Long Long	Total average-case time
-totalWorst	Long Long	Total worst-case time
-start	Time Point	Start time
-stop	Time Point	End time
+<pre>
+Variable        Data Type           Description
+a[]             Integer Array       Stores array elements
+n               Integer             Number of elements
+m               Integer             Pivot starting index
+p               Integer             Ending index for partition
+i, j            Integer             Partition pointers
+low             Integer             Starting index of subarray
+high            Integer             Ending index of subarray
+RUNS            Constant Integer    Number of executions
+totalBest       Long Long           Total average-case time
+totalWorst      Long Long           Total worst-case time
+start           Time Point          Start time
+stop            Time Point          End time
+</pre>
 
 <b>Logical Reasoning:</b>
 
@@ -767,19 +777,21 @@ END
 
 <b>Variables Used:</b>
 
-Variable	Data Type	Description
-arr[]	Integer Array	Stores array elements
-n	Integer	Number of elements
-low	Integer	Starting index
-mid	Integer	Middle index
-high	Integer	Ending index
-L[]	Integer Array	Left subarray
-R[]	Integer Array	Right subarray
-i, j, k	Integer	Index counters
-RUNS	Constant Integer	Number of executions
-start	Time Point	Start time
-stop	Time Point	End time
-bestTime	Long Long	Total execution time
+<pre>
+Variable        Data Type           Description
+arr[]           Integer Array       Stores array elements
+n               Integer             Number of elements
+low             Integer             Starting index
+mid             Integer             Middle index
+high            Integer             Ending index
+L[]             Integer Array       Left subarray
+R[]             Integer Array       Right subarray
+i, j, k         Integer             Index counters
+RUNS            Constant Integer    Number of executions
+start           Time Point          Start time
+stop            Time Point          End time
+bestTime        Long Long           Total execution time
+</pre>
 
 <b>Logical Reasoning:</b>
 
@@ -831,13 +843,13 @@ Print MST
 END
 
 <b>Variables Used:</b>
-
-Variable	Data Type	Description
-graph[][]	2D Array	Adjacency matrix
-key[]	Integer Array	Minimum weights
+<pre>
+Variable	Data Type	    Description
+graph[][]	2D Array	    Adjacency matrix
+key[]	    Integer Array	Minimum weights
 parent[]	Integer Array	Stores MST
 mstSet[]	Boolean Array	Tracks included vertices
-
+</pre>
 <b>Logical Reasoning:</b>
 The algorithm grows the MST step by step by always choosing the minimum weight edge.
 
@@ -866,12 +878,12 @@ Print MST
 END
 
 <b>Variables Used:</b>
-
-Variable	Data Type	Description
-edges[]	Structure Array	Stores edges
-parent[]	Integer Array	Disjoint set
-V, E	Integer	Vertices & edges
-
+<pre>
+Variable	Data Type	        Description
+edges[]	    Structure Array     Stores edges
+parent[]	Integer Array	    Disjoint set
+V, E	    Integer            	Vertices & edges
+</pre>
 <b>Logical Reasoning:</b>
 Edges are selected in increasing order while avoiding cycles using union-find.
 
@@ -900,12 +912,12 @@ Print distances
 END
 
 <b>Variables Used:</b>
-
-Variable	Data Type	Description
-dist[]	Integer Array	Shortest distances
+<pre>
+Variable	Data Type	    Description
+dist[]	    Integer Array	Shortest distances
 visited[]	Boolean Array	Tracks visited nodes
-graph[][]	2D Array	Adjacency matrix
-
+graph[][]	2D Array	    Adjacency matrix
+</pre>
 <b>Logical Reasoning:</b>
 Greedy approach always selects the nearest vertex.
 
@@ -934,11 +946,11 @@ Return m[1][n-1]
 END
 
 <b>Variables Used:</b>
-
-Variable	Data Type	Description
-m[][]	2D Array	DP table
-p[]	Integer Array	Matrix dimensions
-
+<pre>
+Variable	Data Type	    Description
+m[][]	    2D Array	    DP table
+p[]	        Integer Array	Matrix dimensions
+</pre>
 <b>Logical Reasoning:</b>
 Breaks problem into subproblems using dynamic programming.
 
@@ -965,12 +977,12 @@ Print hull
 END
 
 <b>Variables Used:</b>
-
+<pre>
 Variable	Data Type	Description
-Point	Structure	Stores coordinates
-hull[]	Array	Hull points
-h	Integer	Hull size
-
+Point	    Structure	Stores coordinates
+hull[]	    Array	    Hull points
+h	        Integer	    Hull size
+</pre>
 <b>Logical Reasoning:</b>
 Divide-and-conquer approach similar to QuickSort.
 
@@ -998,11 +1010,11 @@ Trace back result
 END
 
 <b>Variables Used:</b>
-
+<pre>
 Variable	Data Type	Description
-dp[][]	2D Array	Stores LCS values
-s1, s2	String	Input strings
-
+dp[][]	    2D Array	Stores LCS values
+s1, s2	    String	    Input strings
+</pre>
 <b>Logical Reasoning:</b>
 Stores intermediate results to avoid recomputation.
 
@@ -1030,11 +1042,11 @@ Print matrix
 END
 
 <b>Variables Used:</b>
-
+<pre>
 Variable	Data Type	Description
-A[][]	2D Array	Distance matrix
-INF	Constant	Infinity value
-
+A[][]	    2D Array	Distance matrix
+INF	        Constant	Infinity value
+</pre>
 <b>Logical Reasoning:</b>
 Checks if intermediate nodes improve path.
 
@@ -1062,13 +1074,13 @@ Trace selected items
 END
 
 <b>Variables Used:</b>
-
+<pre>
 Variable	Data Type	Description
-K[][]	2D Array	DP table
-w[]	Array	Weights
-p[]	Array	Profits
-m	Integer	Capacity
-
+K[][]	    2D Array	DP table
+w[]	        Array	    Weights
+p[]	        Array	    Profits
+m	        Integer	    Capacity
+</pre>
 <b>Logical Reasoning:</b>
 Dynamic programming ensures optimal selection.
 
